@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Phones Changed — Snake Maze</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hud chrome">
+  <span class="hud-l">◉ SUBJECT: THE PHONE</span>
+  <span class="hud-c" id="hudPoint">POINT 01 / 11</span>
+  <span class="hud-r"><span id="hudClock">00:00</span></span>
+</header>
+
+<section id="game" hidden>
+  <div id="phoneFrame"></div>
+  <div class="phone-btn pwr"></div>
+  <div class="phone-btn vol"></div>
+  <div class="phone-cam"></div>
+  <div class="phone-spk"></div>
+  <div class="ph-antenna"></div>
+  <div class="ph-side l vol"></div>
+  <div class="ph-side l pwr"></div>
+  <div class="ph-side r"></div>
+  <span class="ph-screw tl"></span>
+  <span class="ph-screw tr"></span>
+  <span class="ph-screw bl"></span>
+  <span class="ph-screw br"></span>
+  <div class="ph-plate">EST. 1876</div>
+  <div class="film-perf l"></div>
+  <div class="film-perf r"></div>
+  <canvas id="mazeCv" width="1488" height="912"></canvas>
+  <div class="lbar top"></div>
+  <div class="lbar bot"></div>
+  <div id="flash"></div>
+  <div id="hitStamp">⚠ SETBACK — HIT!</div>
+  <div id="tlBar" aria-hidden="true"><div class="tl-track"></div><div id="tlFill"></div><div id="tlTicks"></div><div id="tlDot"></div></div>
+  <div id="lowerThird"></div>
+  <div id="filmFx"></div>
+</section>
+
+<div class="sheetWrap" id="sheetWrap" hidden>
+  <div class="sheet" id="sheet"></div>
+</div>
+
+<div id="titleCard" hidden></div>
+<div id="mainTitle" hidden><h1 class="mt-title">HOW PHONES CHANGED</h1><p class="mt-sub">A DOCUMENTARY BY SIYUAN CHEN</p><div class="tc-rule"></div></div>
+<div id="photoBeat" hidden><img id="pbImg" alt=""><span class="pb-cam" id="pbCam"></span><div class="pb-cap" id="pbCap"></div></div>
+
+<section class="screen entry" id="entry">
+  <canvas id="rainCv"></canvas>
+  <div id="glWrap"></div>
+  <div id="entryFade"></div>
+</section>
+
+<section class="screen intro2" id="intro2" hidden>
+  <canvas id="introCv" width="1560" height="392" hidden></canvas>
+  <div class="mont" id="mont">
+  <img class="on" src="images/bell1876.jpg" alt="">
+  <img src="images/operators.jpg" alt="">
+  <img src="images/rotary.jpg" alt="">
+  <img src="images/carphone.jpg" alt="">
+  <img src="images/cooper.jpg" alt="">
+  <img src="images/nokia6110.jpg" alt="">
+  <img src="images/jsh04.jpg" alt="">
+  <img src="images/iphone2007.jpg" alt="">
+  <img src="images/videocall.jpg" alt="">
+</div>
+  <div class="stream-shade"></div>
+  <div class="stream-text" id="streamText"></div>
+  <div class="caret waiting" id="introCaret">▾</div>
+</section>
+<button class="corner-btn auto chrome" id="autoBtn" title="Auto-advance on the narration timings">AUTO</button>
+
+<script src="three.min.js"></script>
+<script src="entry3d.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
